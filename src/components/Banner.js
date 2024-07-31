@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/about_man.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { TypeAnimation } from 'react-type-animation';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -57,7 +57,18 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline rounded-pill p-3">Welcome</span>
                 <h1>{`Hi! I'm John Jhovir`}</h1>
-                <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <TypeAnimation
+                  sequence={[
+                    '𝓦𝓮𝓫 𝓓𝓮𝓼𝓲𝓰𝓷𝓮𝓻',
+                    1000,
+                    'ƤŘØǤŘΔΜΜ€Ř',
+                    1000
+                  ]}
+                  wrapper="h1"
+                  className="py-3"
+                  speed={50}
+                  repeat={Infinity}
+                />
                   <p style={{ textAlign: "justify" }}>{"Web developer skilled in HTML, CSS, JavaScript, Backend Scripting(PHP, NodeJS), and basic WordPress and Wix. I create attractive, user-friendly websites and stay updated with the latest web development trends to bring new ideas to life."}</p>
               </div>}
             </TrackVisibility>
