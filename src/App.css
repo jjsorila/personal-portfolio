@@ -313,7 +313,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-bx {
   background: #151515;
-  border-radius: 64px;
+  border-radius: 20px;
   text-align: center;
   padding: 60px 50px;
   box-shadow: 1px 1px 45px 6px rgba(171, 211, 226, 0.74);
@@ -424,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx {
   position: relative;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   margin-bottom: 24px;
 }
